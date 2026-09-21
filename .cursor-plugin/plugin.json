@@ -1,0 +1,14 @@
+{
+  "name": "medal-social",
+  "displayName": "Medal Social",
+  "version": "1.0.0",
+  "description": "Turn an idea into an on-brand email in Medal Social. Use Brand Center, image assets and editable email modules, then open the draft in the visual builder.",
+  "author": { "name": "Medal Social", "email": "hello@medalsocial.com" },
+  "homepage": "https://medalsocial.com",
+  "repository": "https://github.com/Medal-Social/medal-social-plugin",
+  "license": "MIT",
+  "keywords": ["medal-social", "medal-brand-center", "medal-email-builder"],
+  "logo": "assets/logo.svg",
+  "skills": ["skills/medal-branded-email"],
+  "mcpServers": "mcp.json"
+}
