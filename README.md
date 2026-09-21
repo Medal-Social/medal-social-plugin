@@ -31,6 +31,15 @@ The same endpoint supplies the tool catalog, authentication, brand context, emai
 
 For Grok web, add this URL as a Custom connector at [grok.com/connectors](https://grok.com/connectors). Grok web custom connectors and the Grok Bot marketplace have separate installation/review flows.
 
+### Other hosts
+
+- [Claude setup](hosts/claude.md): remote connector plus a Claude Code/Cowork plugin manifest using the same shared email skill.
+- [Gemini Apps setup](hosts/gemini.md): custom MCP connection, subject to Google's account and regional availability.
+- [Microsoft Copilot Studio setup](hosts/microsoft-copilot/README.md): OAuth discovery wizard and an OpenAPI import starting point. The certification package still needs an authenticated environment export and publisher verification.
+- [Acceptance checklist](acceptance.md): the draft-only workflow to verify separately in each host.
+
+These adapters are preparation for host validation and directory review. Their presence is not a claim of listing approval or successful end-to-end operation in every host.
+
 ## Included capabilities
 
 | Email tool | Purpose |
@@ -64,6 +73,8 @@ Saved MCP HTML uses the shared renderer's strict table/inline-style mode. Embedd
 Email sends, audience setup, scheduling and transactional trigger activation remain separate from these draft tools. A generic builder quality warning about marketing unsubscribe may appear on a transactional template; review according to the intended email type.
 
 ## Support
+
+[Privacy policy](https://www.medalsocial.com/legal/privacy) · [Terms of service](https://www.medalsocial.com/legal/terms-of-service)
 
 [Medal Social](https://medalsocial.com) · [Contact support](mailto:hello@medalsocial.com)
 

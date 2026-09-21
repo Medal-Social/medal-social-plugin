@@ -1,0 +1,21 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Medal Social",
+    "description": "Medal Social remote MCP. Configure OAuth before use. Create and edit branded email drafts with Brand Center, images and the visual builder. Additional social and customer tools depend on granted permissions.",
+    "version": "1.1.0"
+  },
+  "host": "mcp.medalsocial.com",
+  "basePath": "/",
+  "schemes": ["https"],
+  "paths": {
+    "/plugins/marketing/mcp": {
+      "post": {
+        "summary": "Medal Social marketing and email tools",
+        "x-ms-agentic-protocol": "mcp-streamable-1.0",
+        "operationId": "InvokeMCP",
+        "responses": { "200": { "description": "MCP response" } }
+      }
+    }
+  }
+}
