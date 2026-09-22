@@ -1,10 +1,18 @@
 {
   "name": "medal-social",
-  "version": "1.1.0",
-  "description": "Create on-brand, editable campaign emails and inactive transactional templates using Medal Social Brand Center, image assets and the visual email builder.",
-  "author": { "name": "Medal Social", "email": "hello@medalsocial.com" },
+  "version": "1.2.0-rc.1",
+  "description": "Create branded emails and manage bookings, workspace members, site traffic, Google hours and guarded website copy through the shared Medal Social connector.",
+  "author": {
+    "name": "Medal Social",
+    "email": "hello@medalsocial.com"
+  },
   "homepage": "https://medalsocial.com",
   "repository": "https://github.com/Medal-Social/medal-social-plugin",
   "license": "MIT",
-  "keywords": ["marketing", "email", "brand", "medal-social"]
+  "keywords": [
+    "marketing",
+    "email",
+    "brand",
+    "medal-social"
+  ]
 }
