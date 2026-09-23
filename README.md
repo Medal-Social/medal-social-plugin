@@ -6,6 +6,8 @@
 
 Connect your Medal Social workspace and turn a launch brief, content idea or sketch your assistant can view into a campaign draft or inactive transactional template. Your Brand Center supplies the voice, logo, colors, typography and footer. Images and native email modules stay editable in Medal's visual builder.
 
+> Business-management release candidate: see [the update and rollout requirements](business-management-update.md). New capabilities must pass deployment and host acceptance before they are advertised as live.
+
 ## Try it
 
 > Create an unsent email announcing our mobile app. Use our Brand Center, an approved hero image, one download CTA and our standard footer. Open the draft in the Medal email builder.

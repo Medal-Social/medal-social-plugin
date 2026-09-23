@@ -1,5 +1,7 @@
 # Listing copy
 
+The description below is the email-first listing. The proposed business update at the end is release-candidate copy; use it only after deployment and the acceptance checklist pass.
+
 Name: Medal Social
 
 Tagline: An idea in chat. An on-brand email you can edit.
@@ -37,3 +39,31 @@ A Medal Social account, workspace membership, appropriate permissions and comple
 ## Reviewer access
 
 Arrange a dedicated, populated demo account through the submission portal's private reviewer-access fields. Never put credentials, tokens or private workspace records in this public repository. Run all required tool tests before attesting that they pass. Do not describe this preparation copy as a submitted or approved listing.
+
+## Proposed 1.2 update — publish after acceptance
+
+**Tagline:** On-brand emails and everyday business tasks, from your chat.
+
+Create editable, on-brand email drafts with Medal Social, then handle everyday business tasks in the same workspace. Brand Center supplies your voice, logo, colors and email footer. Use approved images and native email modules, and open the saved draft in Medal's visual builder.
+
+Ask about today's bookings, available appointments or website traffic. Preview a new booking, reschedule an appointment, rename your workspace or invite a teammate. Owners can change member roles. For a connected Google Business Profile, preview regular or holiday opening-hour updates. For a connected Sanity site, save supported text edits as drafts and approve publication separately.
+
+Consequential changes require a fresh preview and explicit approval. Website editing preserves structure and existing editorial drafts. Custom validators require Studio review; the connector cannot publish those review drafts. Booking creation uses an existing customer and does not collect online payment; confirmations and reminders may be sent. Google may review submitted hours, and CMS publication does not prove that website caches refreshed. Email tools remain draft-only.
+
+Requires a Medal Social account, a configured workspace, relevant modules and permissions. Existing connections must reconnect and approve the expanded access. The connector offers up to 53 tools; granted scopes determine the catalog, and each action also enforces your current workspace role.
+
+**Additional starter prompts:**
+
+1. What bookings do we have today, grouped by service and staff? Use our workspace time zone.
+2. Find a free time for this customer tomorrow and preview the booking, including price and notification effects.
+3. Show our website traffic for the last 28 days, including data sources and freshness.
+4. Preview inviting this colleague as a member. Show the workspace and access before applying it.
+5. Preview our holiday opening hours on Google. Preserve the other days and tell me whether Google is still reviewing the update.
+6. Use Brand Center to improve this page heading. Show the exact text changes, save a draft after approval, and give me the editor link. Ask separately before publication.
+
+
+## Proposed email experience update copy (release candidate)
+
+See your email in supported chats, with desktop and mobile previews and a direct link to the Medal builder. Bring a small image or sketch as a private reference, then approve public use only when it belongs in the delivered email. Shared quality checks flag common mobile and email-client issues. Ask how a campaign performed and get delivery, opens and clicks with clear data limitations.
+
+Preview availability depends on the host. Private attachment intake requires actual file-byte access and is limited to 512 KiB; larger images use Medal Media. Conversion/booking attribution, live link testing and inbox screenshots are not included. Reconnect to grant campaign analytics. This copy is prepared for review, not a claim of marketplace publication.
