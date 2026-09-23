@@ -79,6 +79,19 @@ Both native ChatGPT and Claude successfully read demo Brand Center, rendered an 
 
 ChatGPT initially omitted the product_launch recipe when saving, although its separate preview used it. The diagnostic draft was retained; a second draft with the recipe passed explicitly to creation restored the large headline. The shared skill now requires exact preview/create composition reuse and saved-block readback. A content-only patch cannot restore omitted typography styles. The corrected run verifies the remedy; it does not establish that every future model run will follow the skill.
 
-The template-level is_active flag is not the campaign send status. Native campaign-performance reads still require the expanded email.campaign.read grant. Existing email grants exposed 23 tools; fresh expanded consent is prepared for both hosts but awaits action-time approval. Business operations have not yet been accepted in these native sessions, and Google hours still lacks an approved connected test location.
+The template-level is_active flag is not the campaign send status. Native campaign-performance reads subsequently passed after the expanded grant, as recorded below. Existing email grants exposed 23 tools; fresh expanded consent was subsequently completed for both hosts, as recorded below. Business operations have not yet been accepted in these native sessions, and Google hours still lacks an approved connected test location.
 
-Claude's existing listing is Published at https://claude.ai/directory/medal-social; its listing update is not submitted. OpenAI's version 1.0.0 remains Review and read-only in the publisher portal; no new version action was available. It was not withdrawn. The full update is not claimed approved or publicly available on ChatGPT. Skill package changes require the relevant host's package update/review process.
+Claude's existing listing is Published at https://claude.ai/directory/medal-social; its listing update was subsequently submitted, as recorded below. OpenAI's version 1.0.0 remains Review and read-only in the publisher portal; no new version action was available. It was not withdrawn. The full update is not claimed approved or publicly available on ChatGPT. Skill package changes require the relevant host's package update/review process.
+
+
+## Expanded native grants and directory update — 24 September 2026
+
+Reauthorized Claude and ChatGPT Full Demo with the expanded scopes, restricted to ChatGPT Plugin Review Workspace. Both hosts successfully read campaign performance (draft, zero sends and recipients, null unavailable tracking), workspace members, site inventory and Google Business location inventory. The demo has no connected sites or Google locations, so traffic and hours were not tested. Both booking-today reads returned 403. The booking API enforces the workspace bookings-module feature gate independently of OAuth scopes; the specific production workspace configuration has not yet been inspected. No business mutation, notification or public update was performed.
+
+ChatGPT read-only evidence: https://chatgpt.com/c/6ab45757-870c-83ed-aaf8-4123662b4c1d
+
+Claude directory update submitted: the publisher explicitly confirms 'Your latest edit is in review; the live listing stays until it is approved.' The update synchronizes all 53 tools, declares MCP App support, explains expanded permissions and documents the incomplete live cases. The all-tools self-tested checkbox was cleared to avoid claiming unperformed acceptance. Existing published listing remains available.
+
+OpenAI 1.0.0 remains in Review and locked; no update version was submitted or existing review withdrawn. The full developer connector works. A publisher warning revealed missing dedicated widget-domain metadata; PR #5213 adds standard ui.domain and passed all 25 focused plugin-server tests. It is merged into dev; production deployment is tracked separately and is not implied by merge.
+
+PR: https://github.com/Medal-Social/medal-monorepo/pull/5213
