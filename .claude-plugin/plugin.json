@@ -1,7 +1,7 @@
 {
   "name": "medal-social",
-  "version": "1.2.0-rc.1",
-  "description": "Create branded emails and manage bookings, workspace members, site traffic, Google hours and guarded website copy through the shared Medal Social connector.",
+  "version": "1.2.0-rc.2",
+  "description": "Create branded editable emails, preview them in supported chats, import private image references and read campaign results. Manage bookings, workspace members, traffic, Google hours and guarded site copy through one shared Medal connector.",
   "author": {
     "name": "Medal Social",
     "email": "hello@medalsocial.com"

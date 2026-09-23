@@ -35,3 +35,20 @@ Run these in a dedicated demo workspace after deployment. Test each host separat
 | Replay/revocation | No duplicate effects; revoked permissions denied; interrupted external write is not repeated blindly |
 
 Do not alter a live customer listing, send a real customer notification, or publish a real customer page just to complete this checklist. Choose an authorized test target and record any remaining limitation.
+
+
+## Email experience update (1.2.0-rc.2)
+
+Backend implementation is in the coordinated monorepo release; this package remains a release candidate until staging and native-host acceptance are recorded.
+
+| Case | Required evidence |
+| --- | --- |
+| MCP Apps | Desktop/mobile preview and editor link in each supporting host; plain results and editor fallback in others |
+| Preview isolation | Scripts, forms, remote frames and unsafe editor links blocked; existing public images render |
+| Private attachment | Default import has no public copy; workspace isolation and revocation reject; bytes never echoed |
+| Public email attachment | Explicit user approval; exact request confirmation; public URL readback and idempotent replay |
+| Legacy logo | Resolve only existing public derivatives in the same workspace; never publish private originals |
+| QA | Warnings from exact rendered HTML; browser/static checks not misrepresented as inbox or link tests |
+| Performance | Correct delivered/open/click counters; missing/legacy values remain null; no recipient details; attribution unavailable |
+
+Local backend/tool and sandbox tests passed. The browser connection currently times out, so native ChatGPT/Claude acceptance and directory update submission remain pending.

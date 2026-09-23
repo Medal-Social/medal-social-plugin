@@ -50,7 +50,7 @@ Ask about today's bookings, available appointments or website traffic. Preview a
 
 Consequential changes require a fresh preview and explicit approval. Website editing preserves structure and existing editorial drafts. Custom validators require Studio review; the connector cannot publish those review drafts. Booking creation uses an existing customer and does not collect online payment; confirmations and reminders may be sent. Google may review submitted hours, and CMS publication does not prove that website caches refreshed. Email tools remain draft-only.
 
-Requires a Medal Social account, a configured workspace, relevant modules and permissions. Existing connections must reconnect and approve the expanded access. The connector offers up to 51 tools; granted scopes determine the catalog, and each action also enforces your current workspace role.
+Requires a Medal Social account, a configured workspace, relevant modules and permissions. Existing connections must reconnect and approve the expanded access. The connector offers up to 53 tools; granted scopes determine the catalog, and each action also enforces your current workspace role.
 
 **Additional starter prompts:**
 
@@ -60,3 +60,10 @@ Requires a Medal Social account, a configured workspace, relevant modules and pe
 4. Preview inviting this colleague as a member. Show the workspace and access before applying it.
 5. Preview our holiday opening hours on Google. Preserve the other days and tell me whether Google is still reviewing the update.
 6. Use Brand Center to improve this page heading. Show the exact text changes, save a draft after approval, and give me the editor link. Ask separately before publication.
+
+
+## Proposed email experience update copy (release candidate)
+
+See your email in supported chats, with desktop and mobile previews and a direct link to the Medal builder. Bring a small image or sketch as a private reference, then approve public use only when it belongs in the delivered email. Shared quality checks flag common mobile and email-client issues. Ask how a campaign performed and get delivery, opens and clicks with clear data limitations.
+
+Preview availability depends on the host. Private attachment intake requires actual file-byte access and is limited to 512 KiB; larger images use Medal Media. Conversion/booking attribution, live link testing and inbox screenshots are not included. Reconnect to grant campaign analytics. This copy is prepared for review, not a claim of marketplace publication.

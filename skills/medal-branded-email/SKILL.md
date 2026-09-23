@@ -18,13 +18,14 @@ Use the connected Medal Social MCP tools. Discover the current tool schemas rath
 - For app or product announcements, choose `design_recipe: "product_launch"`. Use one focused message: a short optional eyebrow, one clear h1, concise supporting copy, a relevant hero, one primary CTA and the brand footer. Use native text roles `eyebrow`, `heading`, `body` and `caption` for consistent hierarchy.
 - Prefer native text, image, button, divider, spacer, column and OTP modules where appropriate. Keep copy editable. Do not turn the entire email into an image. Use custom HTML only for a layout the stock modules cannot express; sanitization can remove active content and unsupported image URLs.
 - Reuse appropriate public workspace image assets from context. When requested, call `import_email_image` for an approved public HTTPS image and use the returned asset ID. Imports make the email image publicly readable. Do not upload private files or expose confidential source material without the user's authorization. Generated artwork must be created by a separately available image tool, then imported through the supported public-asset workflow; Medal's import tool does not generate images.
+- For private attachments, use `import_email_attachment` only when the host exposes actual PNG/JPEG/WebP/GIF bytes, up to 512 KiB decoded. Never fabricate base64. Leave `publish_as_email_asset` false for sketches/reference images; the result has no public URL. Set it true only after the user explicitly approves making that image publicly readable for email delivery. For larger or inaccessible attachments use Medal Media. The private reference cannot be used as a public email image.
 - Write meaningful alt text. Label concept artwork honestly. A product mockup must not be described as a verified screenshot.
 - Let Brand Center supply the header/logo and company footer. For campaigns, keep the managed unsubscribe/preferences elements. For transactional drafts, declare needed variables, avoid adding invented values and leave the template inactive.
 - Keep the design restrained: readable text, strong heading hierarchy, coherent spacing, a visible CTA and no redundant empty spacers. Use the workspace's visual rules rather than a fixed universal font or palette.
 
 ## Preview, save and return the builder
 
-1. Call `preview_email` with the composition. Resolve actionable warnings and missing assets or brand information before saving. Do not say you visually inspected a preview unless you actually rendered or viewed it.
+1. Call `preview_email` with the composition. Supported MCP Apps hosts can show the desktop/mobile preview directly in chat; other hosts use the Medal editor after saving. Resolve actionable warnings and missing assets or brand information before saving. Do not say you visually inspected a preview unless you actually rendered or viewed it.
 2. Call `create_email_draft` with a stable idempotency key for that exact creation. Reuse the same key only for a safe retry of the same request. Do not create duplicate drafts because a response is slow or uncertain; inspect the result and read the known draft first.
 3. Return the real editor URL and a short description of the result. State whether it is an unsent campaign draft or an inactive transactional template. Include the campaign link if returned.
 4. Invite review in Medal's builder. Where preview controls are available, inspect desktop and mobile layouts and light/dark preview, checking CTA contrast and image sizing. Browser previews are not certification across Gmail, Outlook, Apple Mail or other inboxes.
@@ -41,3 +42,12 @@ Use the connected Medal Social MCP tools. Discover the current tool schemas rath
 This workflow creates and edits drafts. It does not send email, add recipients, activate transactional triggers or configure sending infrastructure. The shared connector may also expose social-post and customer-context tools; those are separate capabilities and are not needed for email drafting. Use them only for the user's explicitly requested task. Social publishing or scheduling must follow the server's preview and confirmation workflow.
 
 If Brand Center setup, permissions, asset import, revision validation or saving fails, explain the concrete next step and preserve any already-created draft. Keep credentials, internal IDs and raw technical errors out of user-facing copy. Never bypass workspace authorization, consent or a failed validation.
+
+
+## Read performance after delivery
+
+Use `get_email_campaign_performance` to find the campaign by name before reading its resolved ID. Reconnection may be required for `email.campaign.read`. Report the campaign status, lifetime window, data source and freshness limitations. Opens/clicks count unique sends, not people, and may include privacy proxies or scanners. Rates use delivered sends. Null or legacy counters are unavailable, never zero. A draft has not been sent. Conversion and booking attribution is unavailable; never substitute workspace totals or claim campaign causation.
+
+## Quality boundaries
+
+The connector runs static checks for email-client fallbacks, mobile width, dark-mode CSS, alt attributes, link syntax and clipping size. Resolve actionable warnings. Link reachability, contrast measurement and actual Gmail/Outlook/Apple Mail screenshots still require separate testing. A browser preview or static check is not inbox certification.

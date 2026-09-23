@@ -12,7 +12,7 @@ The shared endpoint stays `https://mcp.medalsocial.com/plugins/marketing/mcp`. N
 | Google Business | Locations and live hours; previewed regular/special-hour submission |
 | Sanity | Document/schema discovery; bounded existing-copy edits, drafts and separately approved publication |
 
-The server declares up to 51 tools including the original 22. The catalog is filtered by granted scopes; each operation also checks current workspace authority. Existing grants retain their old permissions. Reconnect and review the expanded consent to enable new tools; some hosts may also require refreshing their tool catalog or OAuth client registration.
+The server declares up to 53 tools including the original 22. The catalog is filtered by granted scopes; each operation also checks current workspace authority. Existing grants retain their old permissions. Reconnect and review the expanded consent to enable new tools; some hosts may also require refreshing their tool catalog or OAuth client registration.
 
 Sanity edits require a deployed schema. Custom validators can produce a clearly marked review draft requiring Studio validation; the connector cannot publish those drafts. Unsupported schema versions, structural edits and existing editorial drafts are refused. CMS publication does not prove that a website cache refreshed. Google submission does not prove that a public listing updated. Online booking payment is not part of the new staff-booking tools.
 
