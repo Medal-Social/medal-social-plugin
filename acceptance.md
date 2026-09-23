@@ -58,3 +58,11 @@ Demo: https://medalsocial.dev/ws/medal-email-connector-staging/emails/templates/
 The staging MCP health/discovery checks pass, advertise email.campaign.read, and reject unauthenticated initialize requests. All nine local preview checks pass across Chromium, Firefox and WebKit, including Norwegian/Arabic host locales. PR #5210 corrects a corrupt synthetic PNG discovered by the full Firefox gate; it does not change application code.
 
 These are backend/protocol/browser-harness results, not native-host acceptance. Browser tab control still times out, so native ChatGPT/Claude acceptance and directory update submission remain pending. This package remains a release candidate.
+
+## Production release verification
+
+The coordinated server update is deployed. Final source 39f4281aeb5fea5efb5cc477fa96e99a32016ebf passed full post-merge CI 35921759852 and staging release 35921760958. Production release 35923692729 succeeded, merging release PR #5211 at ad03ad1c95965cf796babd62d209feef306b04fe. Production health and protected-resource discovery return 200, discovery includes email.campaign.read, and anonymous initialize returns 401 with an OAuth challenge. Existing grants need reconnection to authorize the new analytics scope.
+
+Release evidence: https://github.com/Medal-Social/medal-monorepo/actions/runs/35923692729
+
+Production deployment does not complete native-host acceptance or marketplace review. The package remains 1.2.0-rc.2 pending those checks.
