@@ -23,7 +23,7 @@ Find the connected site. For traffic, name the reporting window, source and fres
 
 Read Brand Center before writing copy. List site documents and schemas, then read the document and revision. Propose edits only to existing supported text fields. The backend preserves layout, slugs, references and keys; missing schemas or unsupported validation require Studio. Do not bypass this refusal through a generic raw-patch tool.
 
-Save an approved edit as a draft and return the Studio link. Publishing is a separate preview and approval. It accepts the unchanged draft made by this workflow and refuses intervening editorial changes. Describe a successful result as CMS publication until the live website is checked; cache freshness is separate.
+Save an approved edit as a draft and return the Studio link. If `requires_studio_validation` is true, explain that it is a review draft: custom rules must be checked in Studio and this connector cannot publish it. Do not describe it as validated or ready to publish, retry publication, or fall back to raw mutations. Publishing other supported drafts is a separate preview and approval. It accepts the unchanged draft made by this workflow and refuses intervening editorial changes. Describe a successful result as CMS publication until the live website is checked; cache freshness is separate.
 
 ## Google Business hours
 
