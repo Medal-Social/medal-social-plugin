@@ -19,7 +19,7 @@ Run independently in Claude, Gemini Apps and Microsoft Copilot Studio. Use only 
 
 Directory reviewers may require additional testing for every social/customer tool exposed by the grant. The email checklist is not a claim that those additional tools have been tested in every host.
 
-## Business-management acceptance (pending live verification)
+## Business-management native-host acceptance (pending)
 
 Run these in a dedicated demo workspace after deployment. Test each host separately.
 
@@ -51,4 +51,10 @@ Backend implementation is in the coordinated monorepo release; this package rema
 | QA | Warnings from exact rendered HTML; browser/static checks not misrepresented as inbox or link tests |
 | Performance | Correct delivered/open/click counters; missing/legacy values remain null; no recipient details; attribution unavailable |
 
-Local backend/tool and sandbox tests passed. The browser connection currently times out, so native ChatGPT/Claude acceptance and directory update submission remain pending.
+Monorepo implementation #5209 is merged; staging transaction 35919250470 succeeded on 2026-09-23. Live backend acceptance verified private originals are not publicly readable (404), explicitly public images load (200), repeated imports reuse the same asset, outsiders are rejected, existing approved logo derivatives resolve, and an unsent campaign returns correct draft/zero-send/null-tracking metrics. The new draft was rendered locally with both images and a 375px mobile view.
+
+Demo: https://medalsocial.dev/ws/medal-email-connector-staging/emails/templates/p175rx9gvg1mzs7a5v8kfmprkh8ezdqe
+
+The staging MCP health/discovery checks pass, advertise email.campaign.read, and reject unauthenticated initialize requests. All nine local preview checks pass across Chromium, Firefox and WebKit, including Norwegian/Arabic host locales. PR #5210 corrects a corrupt synthetic PNG discovered by the full Firefox gate; it does not change application code.
+
+These are backend/protocol/browser-harness results, not native-host acceptance. Browser tab control still times out, so native ChatGPT/Claude acceptance and directory update submission remain pending. This package remains a release candidate.
