@@ -48,9 +48,9 @@ Create editable, on-brand email drafts with Medal Social, then handle everyday b
 
 Ask about today's bookings, available appointments or website traffic. Preview a new booking, reschedule an appointment, rename your workspace or invite a teammate. Owners can change member roles. For a connected Google Business Profile, preview regular or holiday opening-hour updates. For a connected Sanity site, save supported text edits as drafts and approve publication separately.
 
-Consequential changes require a fresh preview and explicit approval. Website editing preserves structure and refuses unsupported validation or existing editorial drafts. Booking creation uses an existing customer and does not collect online payment; confirmations and reminders may be sent. Google may review submitted hours, and CMS publication does not prove that website caches refreshed. Email tools remain draft-only.
+Consequential changes require a fresh preview and explicit approval. Website editing preserves structure and existing editorial drafts. Custom validators require Studio review; the connector cannot publish those review drafts. Booking creation uses an existing customer and does not collect online payment; confirmations and reminders may be sent. Google may review submitted hours, and CMS publication does not prove that website caches refreshed. Email tools remain draft-only.
 
-Requires a Medal Social account, a configured workspace, relevant modules and permissions. Existing connections must reconnect and approve the expanded access. The connector offers up to 51 tools; your role and granted permissions determine the available tools.
+Requires a Medal Social account, a configured workspace, relevant modules and permissions. Existing connections must reconnect and approve the expanded access. The connector offers up to 51 tools; granted scopes determine the catalog, and each action also enforces your current workspace role.
 
 **Additional starter prompts:**
 
