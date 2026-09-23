@@ -25,12 +25,12 @@ Run these in a dedicated demo workspace after deployment. Test each host separat
 
 | Case | Required evidence |
 | --- | --- |
-| Legacy vs fresh consent | Old grant has no new tools; fresh grant exposes only its scopes and current role |
+| Legacy vs fresh consent | Old grant has no new tools; fresh catalog follows its scopes and operations enforce current authority |
 | Bookings | Today matches Medal; creation appears once; move preserves history; occupied slot and stale price refuse |
 | Workspace | Rename reflected in Medal; approved demo invite has expected effect; role change persists; owners/self remain protected |
 | Traffic | Answer matches provider, window and freshness; disconnected source is not reported as zero |
-| Google hours | Approved test location only; exact field mask; concurrent edit refuses; pending review distinguished from public visibility |
-| Site copy | Supported deployed schema; draft opens in Studio; layout preserved; unsupported rules and existing draft refuse |
+| Google hours | Approved test location only; exact field mask; an edit detected during the fresh pre-write read refuses (Google offers no atomic revision precondition); pending review distinguished from public visibility |
+| Site copy | Supported deployed schema; draft opens in Studio; layout preserved; custom validators produce review-only drafts; connector publication and existing drafts refuse |
 | Publication | Separate approval; both revisions enforced; CMS result and live-site freshness reported separately |
 | Replay/revocation | No duplicate effects; revoked permissions denied; interrupted external write is not repeated blindly |
 

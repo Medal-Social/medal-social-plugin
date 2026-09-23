@@ -12,9 +12,9 @@ The shared endpoint stays `https://mcp.medalsocial.com/plugins/marketing/mcp`. N
 | Google Business | Locations and live hours; previewed regular/special-hour submission |
 | Sanity | Document/schema discovery; bounded existing-copy edits, drafts and separately approved publication |
 
-The server declares up to 51 tools including the original 22. The actual catalog depends on scopes and role. Existing grants retain their old permissions. Reconnect and review the expanded consent to enable new tools; some hosts may also require refreshing their tool catalog or OAuth client registration.
+The server declares up to 51 tools including the original 22. The catalog is filtered by granted scopes; each operation also checks current workspace authority. Existing grants retain their old permissions. Reconnect and review the expanded consent to enable new tools; some hosts may also require refreshing their tool catalog or OAuth client registration.
 
-Sanity edits require a deployed supported schema. Custom rules, unsupported schema versions, structural edits and existing editorial drafts are refused. CMS publication does not prove that a website cache refreshed. Google submission does not prove that a public listing updated. Online booking payment is not part of the new staff-booking tools.
+Sanity edits require a deployed schema. Custom validators can produce a clearly marked review draft requiring Studio validation; the connector cannot publish those drafts. Unsupported schema versions, structural edits and existing editorial drafts are refused. CMS publication does not prove that a website cache refreshed. Google submission does not prove that a public listing updated. Online booking payment is not part of the new staff-booking tools.
 
 ## Release and directory updates
 
@@ -26,3 +26,7 @@ Sanity edits require a deployed supported schema. Custom rules, unsupported sche
 6. Update the existing Cursor/Grok package submission according to its publisher workflow. Server changes and marketplace approval are separate milestones.
 
 This repository contains no reviewer credentials. Supply any required reviewer access only through the publisher's private fields.
+
+## Staging evidence, 23 September 2026
+
+Live backend checks passed for member reads, rename/restore, booking catalogue/availability/create/reschedule/idempotent replay, traffic reads and workspace isolation. A Sanity review draft saved and replayed without changing the published document; custom-rule publication was refused. Studio browser handoff fixes are in Medal-Social/medal-monorepo#5207 and Medal-Social/medal-customers#960. Native-host acceptance with the expanded grant, a controlled live member invitation and an approved Google test location remain pending. These backend checks do not certify each host.
