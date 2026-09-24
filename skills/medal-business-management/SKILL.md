@@ -32,3 +32,7 @@ Select the correct business location and read its current hours. Regular and spe
 ## Availability
 
 Tool availability depends on the deployed server, granted scopes, workspace role, plan and connected providers. Older grants need reconnection to gain new permissions. Explain a missing capability without claiming it was performed. The same business logic serves compatible hosts; a package or directory receipt is not proof that a particular host passed a live test.
+
+## Booking cancellation
+
+If discovery exposes `preview_booking_cancellation` and `cancel_booking`, read the appointment, preview the exact cancellation and present customer, service, local time, reason and payment/notification effects. Execute only the approved fresh preview with a stable idempotency key. The separate `bookings.booking.cancel` grant is required; older grants do not gain it automatically. Do not promise a refund or suppressed automation. Re-read the booking and report settlement separately. Never test on an unrelated customer appointment.
