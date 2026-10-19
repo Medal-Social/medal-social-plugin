@@ -23,7 +23,7 @@ A Medal Social account, workspace membership, appropriate permissions and comple
 - Source: https://github.com/Medal-Social/medal-social-plugin
 - Privacy: https://www.medalsocial.com/legal/privacy
 - Terms: https://www.medalsocial.com/legal/terms-of-service
-- Support: hello@medalsocial.com
+- Support: hi@medalsocial.com
 - Logo: assets/logo.svg; raster alternative assets/logo.png (512 x 512)
 - MCP URL: https://mcp.medalsocial.com/plugins/marketing/mcp
 - Authentication: OAuth with discovery and dynamic client registration; workspace-scoped user consent

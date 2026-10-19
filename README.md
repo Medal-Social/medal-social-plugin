@@ -78,7 +78,7 @@ Email sends, audience setup, scheduling and transactional trigger activation rem
 
 [Privacy policy](https://www.medalsocial.com/legal/privacy) · [Terms of service](https://www.medalsocial.com/legal/terms-of-service)
 
-[Medal Social](https://medalsocial.com) · [Contact support](mailto:hello@medalsocial.com)
+[Medal Social](https://medalsocial.com) · [Contact support](mailto:hi@medalsocial.com)
 
 For a reproducible plugin issue, open a repository issue without credentials or private customer data. Report security concerns privately to the support address.
 

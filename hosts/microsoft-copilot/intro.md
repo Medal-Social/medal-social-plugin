@@ -29,6 +29,6 @@ Draft tools do not send email, add recipients or activate transactional triggers
 
 ## Support
 
-https://medalsocial.com — hello@medalsocial.com
+https://medalsocial.com — hi@medalsocial.com
 
 This document accompanies the connector preparation package; it does not assert Microsoft certification.
