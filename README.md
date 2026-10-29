@@ -55,7 +55,7 @@ These adapters are preparation for host validation and directory review. Their p
 
 Native text, images, buttons, dividers, spacers, columns and OTP modules are supported; sanitized custom HTML is available when needed. The `product_launch` recipe provides a consistent heading, spacing and CTA hierarchy while preserving the workspace's brand.
 
-The shared connector also includes authorized searches for posts, analytics, channels, contacts, deals and helpdesk context, plus post drafting, previewing, scheduling and publishing. Availability depends on the scopes granted at consent. **The email skill only uses draft email actions.** Inspect the actual consent screen before granting access.
+The shared connector also includes authorized searches for posts, analytics, channels, contacts, deals and helpdesk context, plus post drafting, editing drafts, attaching post media, previewing, scheduling, publishing and unpublishing. Unpublish is previewed first, then run. Availability depends on the scopes granted at consent. **The email skill only uses draft email actions.** Inspect the actual consent screen before granting access.
 
 ## Authentication and data
 
